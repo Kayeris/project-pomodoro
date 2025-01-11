@@ -1,0 +1,26 @@
+{
+	"manifest_version": 3,
+	"name": "The Pomodoro Project",
+	"description": "New Tab Extension that allows for ease of studying, in an aesthetic manner",
+	"version": "1.0",
+	"icons": {
+	"16": "images/clock_16.png",
+	"32": "images/clock_32.png",
+	"48": "images/clock_48.png",
+	"128": "images/clock_128.png"
+	},
+	"background": {
+	"service_worker": "background.js"
+	},
+	"permissions": ["storage", "activeTab", "scripting"],
+	"action": {
+		"default_popup": "popup.html",
+		"default_icon": {
+			"16": "images/clock_16.png",
+			"32": "images/clock_32.png",
+			"48": "images/clock_48.png",
+			"128": "images/clock_128.png"
+		}
+	},
+	"chrome_url_overrides": { "newtab": "main.html" }
+}

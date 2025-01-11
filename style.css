@@ -1,0 +1,124 @@
+body {
+    /* min-height: 100vh; */
+    /* background-color: rgba(0, 0, 0, 0.66); */
+    background: url("https://source.unsplash.com/random/1920x1080/?scenic-landscape");
+    /* opacity: 0.8; */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+}
+h1 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 3vw;
+    margin: 0;
+    text-shadow: 2px -1px 10px #000000;
+}
+h3 {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.5vw;
+    margin: 0;
+}
+
+.banner-area  {
+    position: absolute;
+    text-align: right;
+    padding-bottom: 3vw;
+    width: 100vw;
+    margin: 0;
+    align-content:flex-end;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+    padding-top: 2vh;
+    padding-right: 2vw;
+    font-size: 2.5vw;
+    cursor: pointer;
+}
+.btn:hover {
+    color: rgb(255, 255, 255);
+}
+
+.bg-overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    animation: 0.2s ease-in-out 0s 1 overlayFade;
+    /* animation-fill-mode: forwards; */
+
+}
+
+.settings-popup {
+    display: none;
+    position: absolute;
+    background: rgb(15, 15, 15);
+    width: 35vw;
+    height: 35vw;
+    top: -webkit-calc(50vh - 17.5vw);
+    left: -webkit-calc(50vw - 17.5vw);
+    /* transform: translate(-50%, -50%); */
+    z-index: 200;
+    border-radius: 15px;
+    animation: 0.2s ease-in-out 0s 1 slideUp;
+    animation-fill-mode: forwards;
+}
+
+.close-popup {
+    float: right;
+    padding: 3%;
+    font-size: 1vw;
+    cursor: pointer;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* animation: 0.2s ease-out 0s 1 fadeOut; */
+}
+
+.popupcontent {
+    margin: 5%;
+}
+
+.sample-div {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-shadow: 2px -1px 10px #000000;
+}
+
+.clock-display {
+    display: block;
+}
+
+.input-test-form {
+    color: white;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: scale(0);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+@keyframes overlayFade {
+    from { background-color: #00000000; }
+    to { background-color: rgba(0, 0, 0, 0.75); }
+}
+
+
+

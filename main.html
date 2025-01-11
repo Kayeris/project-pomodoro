@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="toggle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <title>New Tab - Pomodoro Project</title>
+    </head>
+
+	<body>       
+        <div class="banner-area">
+            <!-- <p>Zaza</p> -->
+            <button id="popup-settings" class="btn"><i class="fa fa-solid fa-gear"></i></button>
+        </div>
+
+        <div id="toggle-box" class="toggle-div">
+            <input type="checkbox" id="switch" class="switch"/><label for="switch"></label>
+        </div>
+
+        <div id="clockdiv" class="clock-display">
+            <my-clock></my-clock>
+        </div>
+        
+        <div id="sample-div" class ="sample-div">
+            <h1 class="samplediv">POMODORO</h1>
+        </div>
+
+
+
+        
+        <!-- <button id="toggleswitch" >Click to toggle</button> -->
+
+
+        <!-- <label id="toggle-switch" class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+        </label> -->
+
+        <div id="overlay" class="bg-overlay"></div>
+        <div id="popup" class="settings-popup">
+            <div class="popupcontrols">
+                <span id="popupclose" class="close-popup"><i class="fa fa-times close-popup"></i></span>
+            </div>
+            <div class="popupcontent">
+                <!-- <h1>Some Popup Content</h1> -->
+                <h3>Pomodoro Timer</h3>
+                <form action="settingsdata.php" method="post" class="input-test-form">
+                    Name: <input type="text" name="name"><br>
+                    E-mail: <input type="text" name="email"><br>
+                    <input type="submit" value="Save Preferences">
+                </form>
+                
+            </div>
+        </div>
+
+        <hello-greetings></hello-greetings>
+	</body>
+    <script src="./greetings.js"></script>
+    <script src="./clock.js"></script>
+    <script src="./popup.js"></script>
+    <script src="./toggle.js"></script>
+
+</html>
+
